@@ -1,0 +1,23 @@
+
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title><p style="color: #222">POKÉMON</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-searchbar [(ngModel)]="terms" style="background-color: white"></ion-searchbar>
+  <ion-list>
+  <ion-item *ngFor="let p of dados | search:terms">
+    <ion-thumbnail item-start>
+      <img src="{{ p.thumb }}.png">
+    </ion-thumbnail>
+    <h2>{{p.nome}}</h2>
+    <p>{{p.desc1}}</p>
+    <button (click)="detalhes(p.id)"ion-button clear item-end><img src="../assets/imgs/pokemostra.png" style="height: 30px"></button>
+  </ion-item>
+</ion-list>
+</ion-content>

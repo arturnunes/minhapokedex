@@ -1,0 +1,44 @@
+<!--
+  Generated template for the CadaspokebolaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title><p style="color:#222">Cadastrar Pokébola</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+	<ion-list>
+	<ion-item>
+      <ion-label stacked>Nome: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokebola.nome" placeholder="Ex: Lureball"></ion-input>
+    </ion-item>
+	<ion-item>
+      <ion-label stacked>Thumb: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokebola.thumb" placeholder="http://urldaimg"></ion-input>
+    </ion-item>
+	<ion-item>
+      <ion-label stacked>Preço: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokebola.preco" placeholder="Ex: 400"></ion-input>
+    </ion-item>
+	<ion-item>
+      <ion-label stacked>Localização: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokebola.localizacao" placeholder="Ex: Todos Poké Marts"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Particularidade</ion-label>
+      <ion-input type="text" [(ngModel)]="pokebola.particularidade" placeholder="Ex: Não tem chance de não capturar"></ion-input>
+    </ion-item>
+	<ion-item>
+      <ion-label stacked>Chance de Captura</ion-label>
+      <ion-input type="text" [(ngModel)]="pokebola.chancecap" placeholder="Ex: 4x"></ion-input>
+    </ion-item>
+	<ion-item>
+    <button (click)="Pokebola(pokebola)" block ion-button color="primary">Cadastrar Pokébola</button>
+    </ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,24 @@
+<!--
+  Generated template for the CadastroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title><p style="color:#222">CADASTRO</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+    <ion-list> 
+       <button ion-item *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose> 
+        <ion-icon item-left><img src="{{ page.icon }}" style="height: 30px"></ion-icon>  
+        {{ page.titulo }}
+      </button>
+    </ion-list>
+</ion-content>

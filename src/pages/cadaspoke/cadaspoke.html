@@ -1,0 +1,105 @@
+
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title><p style="color: #222"></p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+	<ion-list>
+    <ion-item>
+      <ion-label stacked>Thumb: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.thumb" placeholder="Ex: http://urldaimg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Imagem: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.img" placeholder="Ex: http://urldaimg"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Nome: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.nome" placeholder="Ex: Arco-Iris"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Descrição: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.desc1" placeholder="Ex: É herbivoro"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.desc2" placeholder="Ex: Gosta de animais"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.desc3" placeholder="Ex: Viajante do tempo"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Tipo: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.Tipo1" placeholder="Ex: Aquatico"></ion-input>
+     <ion-input type="text" [(ngModel)]="pokepush.Tipo2" placeholder="Ex: Grass"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Habilidades: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.Habilidade1" placeholder="Ex: Blaze"></ion-input>
+     <ion-input type="text" [(ngModel)]="pokepush.Habilidade2" placeholder="Ex: Overheat"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Chance de Captura: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.Catchrate" placeholder="Ex: 45 (5.9%)"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Especie: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.especie" placeholder="Ex: Lizard"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Grupo: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.EggGroup1" placeholder="Ex: Monster"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.EggGroup2" placeholder="Ex: Dragon"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Tempo de Nascimento: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.Tempo_nasc" placeholder="Ex: 60 - 1000 passos"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Altura: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.Altura" placeholder="Ex: 2.8 m"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label stacked>Peso: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.Peso" placeholder="Ex: 70 kg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Informações Gerais: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.hp" placeholder="hp: Ex: 65"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.ataque" placeholder="Ataque: Ex: 70"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.defesa" placeholder="Defesa: Ex: 70"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.sp_ata" placeholder="Sp Ataque: Ex: 75"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.sp_defe" placeholder="Sp Defesa: Ex: 70"></ion-input>
+      <ion-input type="text" [(ngModel)]="pokepush.speed" placeholder="Velocidade: Ex: 100"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Level Up: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.levelup" placeholder="Ex: Level 19"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Img Pokemon Inicial: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.imgpokeprin" placeholder="Ex: http://urldaimg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Nome Pokemon Inicial: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.pokeinicial" placeholder="Ex: Bulbasauro"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Imagem da Evolução: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.imgevo1" placeholder="Ex: http://urldaimg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Nome da Evolução: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.evolucao1" placeholder="Ex: Ivysauro"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Imagem da Segunda Evolução: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.imgevo2" placeholder="Ex: http://urldaimg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Nome da Segunda Evolução: </ion-label>
+      <ion-input type="text" [(ngModel)]="pokepush.evolucao2" placeholder="Ex: Venossauro"></ion-input>
+    </ion-item>
+    <ion-item>
+    <button (click)="Pokemon(pokepush)" block ion-button color="primary">Cadastrar Pokémon</button>
+    </ion-item>
+	</ion-list>
+</ion-content>

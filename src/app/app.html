@@ -1,1 +1,13 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="NAV">
+  <ion-content>
+  	<img src="../assets/imgs/fundo.jpg" style="height: 120px">
+    <ion-list> 
+       <button ion-item *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose> 
+        <ion-icon item-left name=""><img src="{{ page.icon }}" height="20px"></ion-icon>  
+        {{ page.titulo }}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #NAV [root]="rootPage"></ion-nav>
