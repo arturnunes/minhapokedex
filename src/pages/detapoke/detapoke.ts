@@ -1,4 +1,4 @@
-  import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { p } from '../../model/p';
 import { Http } from '@angular/http';
@@ -16,12 +16,12 @@ import { Http } from '@angular/http';
   templateUrl: 'detapoke.html',
 })
 export class DetapokePage {
-	public id;
-  	public obg: any;
-  	public pokemon: p;
- 	public data:any;
+  public id;
+  public obg: any;
+  public pokemon: p;
+  public data: any;
 
- 	 getEpisodeById(id: number) {
+  getEpisodeById(id: number) {
     if (this.data) {
       return Promise.resolve(this.data);
     }
@@ -36,14 +36,14 @@ export class DetapokePage {
     });
   }
   constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              public http:Http,
-              public toastCtrl:ToastController) {
+    public navParams: NavParams,
+    public http: Http,
+    public toastCtrl: ToastController) {
 
-            this.id = navParams.get("id");
-    	this.pokemon = new p();
-    	console.log(this.id);
-    	this.getEpisodeById(this.id).then(data => {
+    this.id = navParams.get("id");
+    this.pokemon = new p();
+    console.log(this.id);
+    this.getEpisodeById(this.id).then(data => {
       this.obg = data;
       this.pokemon.id = this.obg.id;
       this.pokemon.nome = this.obg.nome;
@@ -67,7 +67,7 @@ export class DetapokePage {
       this.pokemon.ataque = this.obg.ataque;
       this.pokemon.defesa = this.obg.defesa;
       this.pokemon.sp_ata = this.obg.sp_ata;
-      this.pokemon.sp_defe = this.obg.sp_defe;
+      this.pokemon.sp_defesa = this.obg.sp_defesa;
       this.pokemon.speed = this.obg.speed;
       this.pokemon.levelup = this.obg.levelup;
       this.pokemon.imgpokeprin = this.obg.imgpokeprin;
