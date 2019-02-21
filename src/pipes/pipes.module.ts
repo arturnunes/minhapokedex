@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SearchPipe } from './search/search';
 @NgModule({
-	declarations: [SearchPipe,
-    SortPipe],
+	declarations: [SearchPipe],
 	imports: [],
 	exports: [SearchPipe]
 })
